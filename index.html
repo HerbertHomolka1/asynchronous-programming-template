@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles/style.css" />
-        <title>Stop watch</title>
-    </head>
-    <body>
-        <div id="root"></div>
-        <script type="module" src="./src/init.js"></script>
-    </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./styles/style.css">
+<title>Joke</title>
+</head>
+<body>
+<button id="get-joke-btn">Click to get a joke!!!</button>
+<div class="blacklist">
+<input type="checkbox" id="nsfw" value="nsfw">
+<label for="nsfw" class="flags">nsfw</label><br>
+<input type="checkbox" id="religious" value="religious">
+<label for="religious" class="flags">religious</label><br>
+<input type="checkbox" id="political" value="political">
+<label for="political" class="flags">political</label><br>
+<input type="checkbox" id="racist" value="racist">
+<label for="racist" class="flags">racist</label><br>
+<input type="checkbox" id="sexist" value="sexist">
+<label for="sexist" class="flags">sexist</label><br>
+<input type="checkbox" id="explicit" value="explicit">
+<label for="explicit" class="flags">explicit</label>
+</div> 
+<div id="root"></div>
+<script type="module" src="./src/events/setFlagCheck.js"></script>
+<script type="module" src="./src/events/getJokeClick.js"></script>
+</body>
 </html>

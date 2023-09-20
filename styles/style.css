@@ -12,3 +12,19 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #000;
 }
+
+
+#root {
+    color: blueviolet;
+}
+
+.blacklist {
+    display: flex; /* Use flexbox to place checkboxes in a row */
+    flex-wrap: wrap; /* Allow checkboxes to wrap to the next line if needed */
+}
+
+.flags {
+    color: blueviolet ;
+    margin-left: 10px;
+    margin-right: 15px;
+}
